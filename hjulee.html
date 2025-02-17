@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFC Contact</title>
+    <title>HJULEE 명함</title>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
+    <h1>HJULEE 명함</h1>
+    
+    <!-- 명함 이미지 표시 -->
+    <img src="hjulee.jpg" alt="이현주 이사 명함" width="300">
 
-    <h2>내 연락처</h2>
-
-    <!-- 사진 표시 -->
-    <img src="hjulee_card.jpg" alt="이현주 이사 명함" width="300">
-
-
-    <br><br>
-
-    <!-- .vcf 파일 다운로드 -->
-    <a href="https://drive.google.com/uc?export=download&id=1bftSBuLLQPdlcAo8MxiFMWc7LUROTIVG" 
-       download="contact.vcf">
-        <button style="padding: 10px 20px; font-size: 16px;">연락처 다운로드</button>
-    </a>
-
-    <script>
-        // 페이지가 로드되면 자동으로 .vcf 파일 다운로드
-        window.onload = function() {
-            window.location.href = "https://drive.google.com/uc?export=download&id=1bftSBuLLQPdlcAo8MxiFMWc7LUROTIVG";
-        }
-    </script>
-
+    <!-- vCard 파일 다운로드 버튼 -->
+    <p>
+        <a href="https://drive.google.com/uc?export=download&id=1bftSBuLLQPdlcAo8MxiFMWc7LUROTIVG" download="hjulee.vcf">
+            <button>연락처 저장하기 (.vcf 다운로드)</button>
+        </a>
+    </p>
 </body>
 </html>
